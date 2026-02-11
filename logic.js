@@ -1,4 +1,4 @@
-import { getData, setData } from "./storage";
+import { getData, setData } from "./storage.js";
 
 function addBookMarks(userId, title, url, description) {
   const getPreviousData = getData(userId);
@@ -24,14 +24,14 @@ function addBookMarks(userId, title, url, description) {
   return newBookMark;
 }
 
-function sortBookMarks(userId) {
-  const getPreviousData = getData(userId);
+function sortBookMarks(userId,testData=undefined) {
+  const getPreviousData = (testData === undefined) ? getData(userId) : testData
 
-  if (getPreviousData === null) {
+  if (getPreviousData === null || getPreviousData ===undefined) {
     return [];
   }
 
-  const sortedData = getPreviousData.sort((a, b) => b.timestamp - a.timestamp);
+  const sortedData = [...getPreviousData].sort((a, b) => b.timestamp - a.timestamp);
   return sortedData;
 }
 
