@@ -1,0 +1,8 @@
+{
+  "name": "piscine-project-bookmarks",
+  "version": "1.0.0",
+  "type":"module",
+  "scripts": {
+    "test": "node logic.test.js"
+  }
+}
