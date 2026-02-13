@@ -4,8 +4,58 @@
     <meta charset="UTF-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shared Bookmarks</title>
+  <style>
+      body {
+        font-family: sans-serif;
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #f4f4f9;
+      }
+      section {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      form input,
+      form textarea,
+      select {
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      button {
+        background: #030303;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+      }
+      article a {
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+      }
+      .no-data {
+        color: #030101;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
+
     <header> 
      <h1> Shared Bookmarks </h1>
      <section>
