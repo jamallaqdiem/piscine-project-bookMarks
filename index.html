@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shared Bookmarks</title>
-  <style>
+    <style>
       body {
         font-family: sans-serif;
         max-width: 600px;
@@ -55,61 +55,49 @@
     </style>
   </head>
   <body>
-
-    <header> 
-     <h1> Shared Bookmarks </h1>
-     <section>
-       <h2 >Select user</h2>
-       <label for="user-select">User</label>
-       <select id="user-select" name="user">
-       <option value="">Select a user</option>
-      </select>
-     </section>
+    <header>
+      <h1>Shared Bookmarks</h1>
+      <section>
+        <h2>Select user</h2>
+        <label for="user-select">User</label>
+        <select id="user-select" name="user">
+          <option value="">Select a user</option>
+        </select>
+      </section>
     </header>
     <main>
-     <section>
-       <h2>Bookmarks</h2>
-       <p id="no-bookmarks-message"hidden>This user has no bookmarks yet
-       </p>
-       <ul id="bookmarks-list"></ul>
-     </section>
+      <section>
+        <h2>Bookmarks</h2>
+        <p id="no-bookmarks-message" hidden>This user has no bookmarks yet</p>
+        <ul id="bookmarks-list"></ul>
+      </section>
 
-     <section>
-      <h2> Add a new bookmark</h2>
-      <form id="bookmark-form">
-        <div>
-          <label for="url-input">URL</label>
-          <input 
-           type="url"
-           id="url-input"
-           name="url"
-           required />
-        </div>
+      <section>
+        <h2>Add a new bookmark</h2>
+        <form id="bookmark-form">
+          <div>
+            <label for="url-input">URL</label>
+            <input type="url" id="url-input" name="url" required />
+          </div>
 
-         <div> 
-          <label for="title-input">Title</label>
-          <input 
-           type="text"
-           id="title-input"
-           name="title"
-           required />
-        </div>
+          <div>
+            <label for="title-input">Title</label>
+            <input type="text" id="title-input" name="title" required />
+          </div>
 
-        <div> 
-          <label for="discription-input">Description</label>
-          <textarea 
-           id="description-input"
-           name="description"
-           rows="3"
-           required
-          ></textarea>
-        </div>
+          <div>
+            <label for="description-input">Description</label>
+            <textarea
+              id="description-input"
+              name="description"
+              rows="3"
+              required
+            ></textarea>
+          </div>
 
-        <button type="submit">Add bookmark</button>
-        
-      </form>
-
-     </section>
+          <button type="submit">Add bookmark</button>
+        </form>
+      </section>
     </main>
 
     <script type="module" src="./main.js"></script>
